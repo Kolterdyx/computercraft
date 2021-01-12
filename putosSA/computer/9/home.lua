@@ -47,6 +47,9 @@ function execute(cmd, args)
     elseif cmd == "test" then
     elseif cmd == "reboot" then
         os.reboot()
+    elseif cmd == "update" then
+        shell.run("bg", "update")
+        exit()
     end
 end
 -- recieve messages
