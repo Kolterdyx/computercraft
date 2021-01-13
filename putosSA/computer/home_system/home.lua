@@ -5,9 +5,9 @@ modem = peripheral.wrap("top")
 modem.open(23)
 monitor.clear()
 
-if not fs.exists("door_state.lua") do
+if not fs.exists("door_state.lua") then
     io.open("door_state.lua").close()
-
+end
 door_state = table.load("door_state.lua")
 
 
