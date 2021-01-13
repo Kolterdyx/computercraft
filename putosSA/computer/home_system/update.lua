@@ -1,5 +1,6 @@
 print("Updating home.lua")
 if fs.exists("home.lua") then
+    print("Removing old home.lua")
     fs.delete("home.lua")
 end
 shell.run("wget", "https://raw.githubusercontent.com/Kolterdyx/computercraft/master/putosSA/computer/home_system/home.lua")
@@ -9,6 +10,7 @@ if not fs.exists("table_saver.lua") then
 end
 print("Updating startup.lua")
 if fs.exists("startup.lua") then
+    print("Removing old startup.lua")
     fs.delete("startup.lua")
 end
 shell.run("wget", "https://raw.githubusercontent.com/Kolterdyx/computercraft/master/putosSA/computer/home_system/startup.lua")
