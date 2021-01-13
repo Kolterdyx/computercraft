@@ -15,4 +15,4 @@ print("Updating startup.lua")
 shell.run("wget", "https://raw.githubusercontent.com/Kolterdyx/computercraft/master/putosSA/computer/home_system/startup.lua")
 
 print("rebooting")
---os.reboot()
+os.reboot()
